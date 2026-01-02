@@ -1,5 +1,5 @@
 // replace #undef with #define in the following line to use NimBLE library
-#undef USE_NIMBLE
+#define USE_NIMBLE
 
 #ifndef ESP32_BLE_KEYBOARD_H
 #define ESP32_BLE_KEYBOARD_H
