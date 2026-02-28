@@ -29,8 +29,6 @@
 
 #endif // USE_NIMBLE
 
-#include "Print.h"
-
 #define BLE_KEYBOARD_VERSION "0.0.4"
 #define BLE_KEYBOARD_VERSION_MAJOR 0
 #define BLE_KEYBOARD_VERSION_MINOR 0
@@ -131,7 +129,7 @@ typedef struct
   uint8_t keys[6];
 } KeyReport;
 
-class BleKeyboard : public Print, public BLEServerCallbacks, public BLECharacteristicCallbacks
+class BleKeyboard : public BLEServerCallbacks, public BLECharacteristicCallbacks
 {
 private:
   BLEHIDDevice* hid;
@@ -165,6 +163,7 @@ public:
   size_t write(uint8_t c);
   size_t write(const MediaKeyReport c);
   size_t write(const uint8_t *buffer, size_t size);
+  size_t print(const std::string s);
   void releaseAll(void);
   bool isConnected(void);
   void setBatteryLevel(uint8_t level);

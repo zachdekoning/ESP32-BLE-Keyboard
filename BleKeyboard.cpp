@@ -21,6 +21,8 @@
 #include <driver/adc.h>
 #include "sdkconfig.h"
 
+#include <string>
+
 
 #if defined(CONFIG_ARDUHAL_ESP_LOG)
   #include "esp32-hal-log.h"
@@ -540,6 +542,11 @@ size_t BleKeyboard::write(const uint8_t *buffer, size_t size) {
 		buffer++;
 	}
 	return n;
+}
+
+size_t BleKeyboard::print(const std::string s)
+{
+  return write(s.c_str(), s.length());
 }
 
 #if defined(USE_NIMBLE)
