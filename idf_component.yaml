@@ -1,0 +1,9 @@
+description: "Library for emulating a BLE keyboard"
+url: "https://github.com/zachdekoning/ESP32-BLE-Keyboard"
+repository: "https://github.com/zachdekoning/ESP32-BLE-Keyboard.git"
+files:
+  use_gitngnore: true
+  exclude:
+    - library.json
+    - .clang-format
+    - .gitignore

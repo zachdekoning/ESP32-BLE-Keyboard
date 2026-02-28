@@ -1,0 +1,18 @@
+{
+  "name": "ESP32 BLE Keyboard",
+  "version": "0.3.2",
+  "description": "Bluetooth LE Keyboard library for the ESP32.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zachdekoning/ESP32-BLE-Keyboard.git"
+  },
+  "authors": [
+    {
+      "name": "T-vK"
+    }
+  ],
+  "homepage": "https://github.com/zachdekoning/ESP32-BLE-Keyboard",
+  "dependencies": {},
+  "frameworks": "*",
+  "platforms": "*"
+}
